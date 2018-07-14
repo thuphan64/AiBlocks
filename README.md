@@ -1,12 +1,12 @@
 # AiBlocks
 Decentralized applications and smart contracts powered by artificial intelligence. Grows smarter with each block. 
 
-## AiBlocks Origin
+## Origin
 AiBlocks was originally a fork of Ethereum Classic. An attempt to bring AI to decentralized applications.
 
 Starting in 2015, our team has been developing an artificial intelligence protocol specifically designed to grow and and adapt to the latest blockchain technology. We have since integrated our AI protocol into a whole new system of AI powered decentralized applications, running on our growing network - AiBlocks.
 
-### Our Goal
+## Our Goal
 
 Our main goal is to see our network of applications grow and adapt, improving the collective artificial intelligence with each new block, transaction, and every AI made decision.
 
@@ -14,7 +14,7 @@ In a world that sees artificial intelligence playing a huge future role in prett
 
 With AiBlocks, users have already created some pretty amazing applications, tutorials and examples of practical AI use; shared in AiBlocks's "Developer Center", open for anyone to browse through or publish their own. learn new cutting edge AI programming.
 
-### Install
+## Install
 
 ### :rocket: From a release binary
 The simplest way to get started running a node is to visit our [Releases page](https://github.com/aiblocks/aiblocks/releases) and download a zipped executable binary (matching your operating system, of course), then moving the unzipped file `geth` to somewhere in your `$PATH`. Now you should be able to open a terminal and run `$ geth help` to make sure it's working.
