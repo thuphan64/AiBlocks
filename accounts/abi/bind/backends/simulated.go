@@ -19,13 +19,13 @@ package backends
 import (
 	"math/big"
 
-	"github.com/aiblocks/go-aiblocks/accounts/abi/bind"
-	"github.com/aiblocks/go-aiblocks/common"
-	"github.com/aiblocks/go-aiblocks/core"
-	"github.com/aiblocks/go-aiblocks/core/state"
-	"github.com/aiblocks/go-aiblocks/core/types"
-	"github.com/aiblocks/go-aiblocks/ethdb"
-	"github.com/aiblocks/go-aiblocks/event"
+	"github.com/aiblocksproject/go-aiblocks/accounts/abi/bind"
+	"github.com/aiblocksproject/go-aiblocks/common"
+	"github.com/aiblocksproject/go-aiblocks/core"
+	"github.com/aiblocksproject/go-aiblocks/core/state"
+	"github.com/aiblocksproject/go-aiblocks/core/types"
+	"github.com/aiblocksproject/go-aiblocks/ethdb"
+	"github.com/aiblocksproject/go-aiblocks/event"
 )
 
 // This nil assignment ensures compile time that SimulatedBackend implements bind.ContractBackend.
@@ -120,7 +120,7 @@ func (b *SimulatedBackend) ContractCall(contract common.Address, data []byte, pe
 	vmenv := core.NewEnv(statedb, core.DefaultConfigMorden.ChainConfig, b.blockchain, msg, block.Header())
 	gaspool := new(core.GasPool).AddGas(common.MaxBig)
 
-	out, _, err := core.ApplyMessage(vmenv, msg, gaspool)
+	out, _, _, err := core.ApplyMessage(vmenv, msg, gaspool)
 	return out, err
 }
 
